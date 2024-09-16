@@ -1,0 +1,94 @@
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="project_files/logo.png">
+    <link rel="stylesheet" href="project_files/styles.css">
+    <title>Projects - inepsy.me</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .webring-links-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .webring-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .webring-links a {
+            color: #cad3f5;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .webring-links a:hover {
+            color: #c6a0f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen" style="opacity: 0; visibility: hidden;">
+        <div class="logo">
+            <div class="ring"></div>
+            <div class="butterfly"></div> 
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <ul class="navbar">
+                <div class="logo">
+                    <img src="project_files/logo.png" alt="Logo">
+                    <span>inepsy.me</span>
+                </div>
+                <div class="navbar-items">
+                    <li><a href="https://inepsy.me/index.html">About</a></li>
+                    <li><a href="https://inepsy.me/projects">Projects</a></li>
+                </div>
+            </ul>
+            <div class="content">
+                <h2>Projects :3</h2>
+                <div class="album-grid">
+                    <a href="https://github.com/Inepsy/AI-Vtuber" class="album">
+                        <img src="project_files/project1.png" alt="Album 1">
+                        <div class="album-title">AI Vtuber powered by LaMDA and ElevenLabs voice generation.</div>
+                    </a>
+                    <a href="https://github.com/Inepsy/Discord-Music-Bot" class="album">
+                        <img src="project_files/project2.png" alt="Album 2">
+                        <div class="album-title">A discord bot made with Discord.js that plays music</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="more on my Github!">
+            <div class="more on my Github!">
+                <a style="color: #cad3f5; text-decoration: none; transition: color 0.2s ease;">←</a>
+                <a href="https://github.com/Inepsy" style="color: #cad3f5; text-decoration: none; transition: color 0.2s ease;">more on my Github!</a>
+                <a style="color: #cad3f5; text-decoration: none; transition: color 0.2s ease;">→</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            const loadingScreen = document.querySelector('.loading-screen');
+            setTimeout(function() {
+                loadingScreen.style.opacity = '0';
+                loadingScreen.style.visibility = 'hidden';
+            }, 800); 
+        });
+    </script>
+
+
+</body></html>
